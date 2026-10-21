@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    background-color: #262525;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    left: 30px;
+    bottom: 37px;
+    border: 2px solid #555;
+    pointer-events: none;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 30px;
+    pointer-events: none;
+    opacity: 0.20;
+    z-index: 10;
+
+    background-image: repeating-radial-gradient(circle at 0 0,
+            transparent 0,
+            #ffffff 15px,
+            transparent 4px,
+            transparent 4px);
+    background-size: 7px 7px;
+    mix-blend-mode: soft-light;
+}
+
+/*batasnya masss....................................*/
+header {
+    position: absolute;
+    top: 55px;
+    left: 56px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(48px, 5vw, 80px);
+    font-weight: 300;
+    letter-spacing: -4px;
+}
+
+header p {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*batasnya masss....................................*/
+nav {
+    position: absolute;
+    top: 230px;
+    left: 65px;
+}
+
+nav p {
+    margin-bottom: 12px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-bottom: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.4s ease;
+    display: inline-block;
+
+}
+
+nav a:hover {
+    color: #888;
+    transform: translateX(5px);
+}
+
+/*batasnya masss....................................*/
+main {
+    position: absolute;
+    right: 65px;
+    bottom: 55px;
+    width: 165px
+}
+
+main p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.65;
+}
+
+/*batasnya masss....................................*/
+aside {
+    position: fixed;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    z-index: 20;
+}
+
+aside p {
+    margin: 0;
+    font-size: 10px;
+    letter-spacing: 2px;
+    writing-mode: vertical-rl;
+    color: #999;
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: color 0.3 ease;
+}
+
+aside p:hover {
+    color: white;
+}
+
+/*batasnya masss....................................*/
+footer {
+    position: absolute;
+    bottom: 11px;
+    left: 32px;
+}
+
+footer p {
+    font-size: 11px;
+}
