@@ -8,8 +8,8 @@
     align-items:center;
     background: #080808;
     color: white;
-    animation: introExit 0.8s ease forwards;
-    animation-delay: 3.5s;
+    animation: introExit 0.3s ease forwards;
+    animation-delay: 1.5s;
     pointer-events:none;
 }
 .Intro-small{
@@ -17,7 +17,7 @@
     font-size:12px;
     letter-spacing: 6px;
     opacity: 0;
-    animation: textReveal 0.8s ease forwards;
+    animation: textReveal 0.3s ease forwards;
 }
 .Intro h1{
     font-size:clamp(28px, 5vw, 65px);
@@ -163,7 +163,6 @@ main p {
     font-weight: 500;
     line-height: 1.65;
 }
-
 /*batasnya masss....................................*/
 aside {
     position: fixed;
