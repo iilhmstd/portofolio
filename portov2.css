@@ -161,12 +161,19 @@ nav a:hover {
     color: #888;
     transform: translateX(5px);
 }
+
 /*batasnya masss....................................*/
 #Home {}
 
-#Info {}
+#Info {
+    max-width: 750px;
+    line-height: 1.8;
+    font-size: 16px;
+}
 
-#Info p {}
+#Info p {
+    margin-bottom: 24px;
+}
 
 section a {
     color: white;
