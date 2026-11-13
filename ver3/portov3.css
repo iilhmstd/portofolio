@@ -120,6 +120,11 @@ nav {
     position: absolute;
     top: 230px;
     left: 65px;
+    flex-direction: column;
+    align-items:  flex-start;
+    gap: 19px;
+    display: flex;
+
 }
 nav p {
     margin-bottom: 12px;
@@ -137,9 +142,9 @@ nav a {
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
-    transition: color 0.4s ease;
+    transition: color 180ms ease,transform 180ms ease; 
     display: inline-block;
-    transform: 0.4 ease;
+    
 
 }
 nav a:hover {
